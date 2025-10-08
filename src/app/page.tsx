@@ -1,21 +1,49 @@
-import React from "react";
+'use client'
 
-export default function Page() {
+import React from 'react'
+import Split from './(main)/split/Split'
+import Type from './(main)/Type/Type'
+import ParticlesImage from './(main)/Particles/Particles'
+import About from './(main)/About/page'
+import Skills from './(main)/Skills/page'
+import Projects from './(main)/Projects/page'
+import Footer from './Components/Footer/Footer'
+
+
+
+
+
+export default function page() {
+
+
   return (
-    <div className="w-11/12 mx-auto flex flex-col items-start justify-center min-h-screen space-y-4">
-      <span className="text-lg text-gray-600">Hello, I'm</span>
+   
+   
+   
+  <>
+  <div className="relative w-full h-[650px]">
+    <ParticlesImage />
 
-      <h1 className="text-5xl font-bold text-gray-900">Nagy Hani Botros</h1>
-
-      <p className="text-xl text-blue-600 font-medium">
-        Front-End Developer | React
-      </p>
-
-      <span className="max-w-2xl text-gray-700 leading-relaxed">
-        I create responsive and interactive web interfaces using modern
-        technologies like <strong>React</strong>, <strong>Tailwind CSS</strong>,
-        and <strong>Bootstrap</strong>.
+    <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/60 z-10 text-white p-3">
+      <Split />
+      <h1 className="text-5xl font-extrabold my-5 text-blue-600 text-center">
+        Nagy Hani Botros
+      </h1>
+      <Type />
+      <span className="max-w-2xl text-center mt-6">
+        I create responsive and interactive web interfaces using modern technologies like React, Tailwind CSS, and Bootstrap.
       </span>
     </div>
-  );
+    <About/>
+    <Skills/>
+    <Projects/>
+    <Footer/>
+  </div>
+
+  
+</>
+
+   
+   
+  )
 }
