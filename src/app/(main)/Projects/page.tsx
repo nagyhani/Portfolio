@@ -93,6 +93,17 @@ export default function Projects() {
             </Button>
         </div>
 
+         <div className="flex justify-center  md:justify-start relative overflow-hidden group ">
+            <Image className="transition-all duration-500 group-hover:brightness-75" src={'/social.jpg'} alt='Bookmark' width={400} height={250}/>
+               <Button className='bg-blue-600 absolute cursor-pointer ml-3  lg:ml-0 left-7/12 lg:left-6/12 -translate-x-1/2 -translate-y-1/2 top-56 transition-all duration-500 group-hover:top-1/2'>
+              <a target='_blank' href="https://social-app-upgraded-phnwqwsri-nagy-hanis-projects.vercel.app/Login">  <i className="fa-solid fa-eye"></i></a>
+            </Button>
+
+             <Button className='bg-blue-600 absolute cursor-pointer left-5/12 lg:left-4/12 -translate-x-1/2 -translate-y-1/2 top-56 transition-all duration-500 group-hover:top-1/2'>
+            <a target='_blank' href="https://github.com/nagyhani/Social-App-Upgraded"><i className="fa-brands fa-github"></i></a> 
+            </Button>
+        </div>
+
     </div>
  
 </FadeContent>

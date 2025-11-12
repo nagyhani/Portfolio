@@ -12,8 +12,9 @@ export default function Footer() {
 
         </div>
 
-        <div className='flex mt-10'><i className="fa-solid fa-phone text-xl text-white"></i> <p className='text-xl text-white mx-1.5'>+20 1558373663</p> </div>
-         <div className='flex mt-5'><i className="fa-solid fa-location-dot text-xl text-white"></i> <p className='text-xl text-white mx-1.5'>Cairo, Egypt</p> </div>
+        <div className='flex mt-10'><i className="fa-solid fa-phone text-xl text-white mt-1"></i> <a className='text-xl text-white mx-1.5 underline' href="tel:+20 1558373663">+20 1558373663</a></div>
+        <div className='flex mt-10'><i className="fa-solid fa-envelope text-xl text-white mt-1"></i> <a className='text-xl text-white mx-1.5 underline' href="mailto:nagyhani337@gmail.com">nagyhani337@gmail.com</a></div>
+         <div className='flex mt-5'><i className="fa-solid fa-location-dot text-xl text-white mt-1"></i> <p className='text-xl text-white mx-1.5'>Cairo, Egypt</p> </div>
 
          <hr className='w-full my-4 text-white'/>
 

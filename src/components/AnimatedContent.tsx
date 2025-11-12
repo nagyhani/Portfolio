@@ -88,7 +88,7 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
 
      <h1 className='text-5xl font-bold text-center py-12'>About</h1>
 
-      <div ref={ref} className={className ?? "flex flex-col lg:flex-row justify-between items-center px-12"}>
+      <div ref={ref} className={className ?? "flex flex-col lg:flex-row justify-between items-center px-12 min-h-screen"}>
       {/* You can use children OR put internal content here */}
       {children ?? (
         <>

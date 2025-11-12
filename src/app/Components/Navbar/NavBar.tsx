@@ -24,7 +24,7 @@ export default function Navbar() {
       {/* --- Desktop Navbar --- */}
       <div className="hidden md:flex items-center justify-between p-4">
         <div className="text-2xl font-bold text-blue-600">
-          <Link href="/"></Link>
+          <Link href="/">Home</Link>
         </div>
 
         <NavigationMenu>
@@ -35,6 +35,7 @@ export default function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                 <Link href="/About">About</Link>
+
               </NavigationMenuLink>
             </NavigationMenuItem>
 
@@ -58,7 +59,7 @@ export default function Navbar() {
       {/* --- Mobile Navbar --- */}
       <div className="flex md:hidden items-center justify-between p-4">
         <div className="text-2xl font-bold text-blue-600">
-          <Link href="/"></Link>
+          <Link href="/">Home</Link>
         </div>
 
         <button
