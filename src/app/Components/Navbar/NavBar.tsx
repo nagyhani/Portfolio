@@ -20,10 +20,10 @@ export default function Navbar() {
   const toggleMobileMenu = () => setMobileOpen(!mobileOpen)
 
   return (
-    <nav className="w-full bg-neutral-900 border-b border-border sticky top-0 z-50 ">
+    <nav className="w-full bg-blue-700 border-b border-border sticky top-0 z-50 ">
       {/* --- Desktop Navbar --- */}
       <div className="hidden md:flex items-center justify-between p-4">
-        <div className="text-2xl font-bold text-blue-600">
+        <div className="text-2xl font-bold text-white">
           <Link href="/">Home</Link>
         </div>
 
@@ -58,13 +58,13 @@ export default function Navbar() {
 
       {/* --- Mobile Navbar --- */}
       <div className="flex md:hidden items-center justify-between p-4">
-        <div className="text-2xl font-bold text-blue-600">
+        <div className="text-2xl font-bold text-white">
           <Link href="/">Home</Link>
         </div>
 
         <button
           onClick={toggleMobileMenu}
-          className="p-2 rounded-md text-gray-700 hover:bg-muted"
+          className="p-2 rounded-md text-white hover:bg-muted"
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -135,7 +135,7 @@ function MobileLink({ href, text }: { href: string; text: string }) {
   return (
     <Link
       href={href}
-      className="block text-lg font-medium hover:text-blue-600 transition"
+      className="block text-lg font-medium"
     >
       {text}
     </Link>

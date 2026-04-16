@@ -32,7 +32,7 @@ export default function RootLayout({
         <Navbar />
         
         {/* Main content grows to push footer down */}
-       <main className="flex-grow pb-24">
+       <main className="flex-grow">
   {children}
 </main>
         

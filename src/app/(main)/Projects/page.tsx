@@ -14,9 +14,9 @@ export default function Projects() {
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-7'>
 
-        <div className="flex justify-center  md:justify-start relative overflow-hidden group">
+        <div className="flex justify-center items-center  md:justify-start relative overflow-hidden group">
             <Image className="transition-all duration-500 group-hover:brightness-75" src={'/Daniels.jpg'} alt='Bookmark' width={400} height={250}/>
-            <Button className='bg-blue-600 absolute cursor-pointer ml-3 lg:ml-0 left-7/12 lg:left-6/12 -translate-x-1/2 -translate-y-1/2 top-56 transition-all duration-500 group-hover:top-1/2'>
+            <Button className='bg-blue-600 absolute cursor-pointer ml-3 lg:ml-0  lg:left-6/12 -translate-x-1/2 -translate-y-1/2 top-56 transition-all duration-500 group-hover:top-1/2'>
               <a target='_blank' href="https://nagyhani.github.io/Daniels/">  <i className="fa-solid fa-eye"></i></a>
             </Button>
 
@@ -103,6 +103,18 @@ export default function Projects() {
             <a target='_blank' href="https://github.com/nagyhani/Social-App-Upgraded"><i className="fa-brands fa-github"></i></a> 
             </Button>
         </div>
+
+           <div className="flex justify-center  md:justify-start relative overflow-hidden group ">
+            <Image className="transition-all duration-500 group-hover:brightness-75" src={'/MyTv.png'} alt='Bookmark' width={400} height={250}/>
+               <Button className='bg-blue-600 absolute cursor-pointer ml-3  lg:ml-0 left-7/12 lg:left-6/12 -translate-x-1/2 -translate-y-1/2 top-56 transition-all duration-500 group-hover:top-1/2'>
+              <a target='_blank' href="https://my-tv-three-eta.vercel.app/">  <i className="fa-solid fa-eye"></i></a>
+            </Button>
+
+             <Button className='bg-blue-600 absolute cursor-pointer left-5/12 lg:left-4/12 -translate-x-1/2 -translate-y-1/2 top-56 transition-all duration-500 group-hover:top-1/2'>
+            <a target='_blank' href="https://github.com/nagyhani/MyTv"><i className="fa-brands fa-github"></i></a> 
+            </Button>
+        </div>
+
 
     </div>
  
