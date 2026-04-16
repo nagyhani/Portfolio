@@ -2,15 +2,13 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, X, CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
+import { Menu, X} from "lucide-react"
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
