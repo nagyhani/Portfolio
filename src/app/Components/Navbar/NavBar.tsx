@@ -85,49 +85,8 @@ export default function Navbar() {
   )
 }
 
-/* --- Reusable Components --- */
-function ListItem({
-  title,
-  children,
-  href,
-  ...props
-}: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
-  return (
-    <li {...props}>
-      <NavigationMenuLink asChild>
-        <Link
-          href={href}
-          className="block rounded-md p-2 hover:bg-muted/30 transition"
-        >
-          <div className="text-sm font-medium">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-xs">{children}</p>
-        </Link>
-      </NavigationMenuLink>
-    </li>
-  )
-}
 
-function MenuLinkWithIcon({
-  Icon,
-  text,
-  href,
-}: {
-  Icon: React.ElementType
-  text: string
-  href: string
-}) {
-  return (
-    <NavigationMenuLink asChild>
-      <Link
-        href={href}
-        className="flex items-center gap-2 text-sm font-medium hover:text-primary transition"
-      >
-        <Icon className="h-4 w-4" />
-        {text}
-      </Link>
-    </NavigationMenuLink>
-  )
-}
+
 
 function MobileLink({ href, text }: { href: string; text: string }) {
   return (
