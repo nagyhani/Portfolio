@@ -70,7 +70,7 @@ export default function Navbar() {
 
       {/* --- Mobile Drawer --- */}
       {mobileOpen && (
-        <div className="md:hidden bg-background border-t border-border shadow-md animate-in fade-in slide-in-from-top-2">
+        <div className="md:hidden bg-background border-t border-border shadow-md animate-in fade-in slide-in-from-top-3">
           <ul className="flex flex-col p-4 gap-4 text-white">
           
           
